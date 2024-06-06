@@ -59,7 +59,7 @@ static List<VehicleModel> getAllData(){
     status: null,
     glovebox: null,
     trunk: null,
-        image: 'pickup.png'
+        image: 'sadler.png'
 
   ),
   VehicleModel(
@@ -80,7 +80,7 @@ static List<VehicleModel> getAllData(){
     status: null,
     glovebox: null,
     trunk: null,
-        image: 'convertible.png'
+        image: 'yosemite.png'
 
   ),
   VehicleModel(
@@ -101,7 +101,7 @@ static List<VehicleModel> getAllData(){
     status: null,
     glovebox: null,
     trunk: null,
-        image: 'minivan.png'
+        image: 'blista.png'
 
   ),
   VehicleModel(
@@ -122,7 +122,7 @@ static List<VehicleModel> getAllData(){
     status: null,
     glovebox: null,
     trunk: null,
-        image: 'hatckback.png'
+        image: 'prairie.png'
 
   ),
   VehicleModel(
@@ -143,7 +143,7 @@ static List<VehicleModel> getAllData(){
     status: null,
     glovebox: null,
     trunk: null,
-        image: 'sports.png'
+        image: 'cheetah.png'
 
   ),
   VehicleModel(
@@ -164,7 +164,7 @@ static List<VehicleModel> getAllData(){
     status: null,
     glovebox: null,
     trunk: null,
-        image: 'truck.png'
+        image: 'flatbed.png'
 
   ),
   VehicleModel(
@@ -185,7 +185,7 @@ static List<VehicleModel> getAllData(){
     status: null,
     glovebox: null,
     trunk: null,
-        image: 'suv.png'
+        image: 'toros.png'
 
   ),
   VehicleModel(
@@ -206,7 +206,7 @@ static List<VehicleModel> getAllData(){
     status: null,
     glovebox: null,
     trunk: null,
-        image: 'motorcycle.png'
+        image: 'akuma.png'
 
   ),
   VehicleModel(
@@ -227,7 +227,7 @@ static List<VehicleModel> getAllData(){
     status: null,
     glovebox: null,
     trunk: null,
-        image: 'coupe.png'
+        image: 'kuruma.png'
 
   ),
 ];
