@@ -84,7 +84,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                     TextStyle(fontSize: 12.0, color: lightGrey),
                               ),
                               const Text(
-                                "nalqzyy",
+                                "Nao",
                                 style: TextStyle(
                                     fontSize: 18.0,
                                     color: Colors.white,

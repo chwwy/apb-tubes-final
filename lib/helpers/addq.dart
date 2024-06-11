@@ -1,13 +1,13 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-Future<void> addVehicle(String selectedGarage, String plateNumber, String vehicle) async {
+Future<void> addVehicle(String qrCode, String selectedGarage, String plateNumber, String vehicle) async {
   if (selectedGarage.isEmpty) {
     print('Garage is empty');
     return;
   }
 
-  var url = Uri.parse('http://localhost:3000/add-vehicle');
+  var url = Uri.parse('http://192.168.18.3:3000/add-vehicle');
   var response = await http.post(
     url,
     headers: {'Content-Type': 'application/json'},
@@ -15,7 +15,7 @@ Future<void> addVehicle(String selectedGarage, String plateNumber, String vehicl
       "table": "player_vehicles",
       "rows": [
         {
-          "license": "license2:bac98ea18022df59b9674fe667eadfef0390c660",
+          "license": qrCode,
           "citizenid": "H6VJPNF3",
           "vehicle": "${vehicle}",
           "hash": "-295689028",

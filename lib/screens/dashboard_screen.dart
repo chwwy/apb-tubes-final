@@ -435,7 +435,7 @@ class CustomHeader extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                       const Text(
-                          "Hi, nalqzyy",
+                          "Hi, Nao",
                           style: TextStyle(
                               fontSize: 15.0,
                               color: Colors.white,
