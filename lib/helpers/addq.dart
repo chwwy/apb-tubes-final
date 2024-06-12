@@ -1,7 +1,8 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'package:apb5/data/vehicle_model.dart';
 
-Future<void> addVehicle(String qrCode, String selectedGarage, String plateNumber, String vehicle) async {
+Future<void> addVehicle(VehicleModel vehicles, String qrCode, String selectedGarage, String plateNumber, String vehicle) async {
   if (selectedGarage.isEmpty) {
     print('Garage is empty');
     return;
@@ -16,9 +17,9 @@ Future<void> addVehicle(String qrCode, String selectedGarage, String plateNumber
       "rows": [
         {
           "license": qrCode,
-          "citizenid": "H6VJPNF3",
+          "citizenid": vehicles.citizenid,
           "vehicle": "${vehicle}",
-          "hash": "-295689028",
+          "hash": vehicles.hash,
           "mods": '{"plate":"$plateNumber"}',
           "plate": plateNumber,
           "fakeplate": null,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:image_picker/image_picker.dart';
-import 'dart:io';
 import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:apb5/helpers/addq.dart';
 import 'package:apb5/helpers/helper.dart';
@@ -164,7 +163,7 @@ class _OrderScreenState extends State<OrderScreen> {
       }
 
       setState(() {
-        _image = image;  // Update the image state if needed elsewhere in the app
+        _image = image; 
       });
     },
   );
@@ -172,8 +171,8 @@ class _OrderScreenState extends State<OrderScreen> {
 
   Widget _buildQRScannerButton() {
     return ListTile(
-      leading: Icon(Icons.qr_code_scanner),
-      title: Text('Scan QR Code'),
+      leading: const Icon(Icons.qr_code_scanner),
+      title: const Text('Scan QR Code'),
       onTap: () => showDialog(
         context: context,
         builder: (context) => AlertDialog(
@@ -207,8 +206,8 @@ class _OrderScreenState extends State<OrderScreen> {
         onPressed: () {
           if (_formKey.currentState!.validate()) {
             _formKey.currentState!.save();
-            if (selectedGarage != null && plateNumber != null) {
-              addVehicle(qrCode!, selectedGarage!, plateNumber!, widget.vehicle.vehicle.toString());
+            if (qrCode != null && selectedGarage != null && plateNumber != null) {
+              addVehicle(widget.vehicle, qrCode!, selectedGarage!, plateNumber!, widget.vehicle.vehicle.toString());
               Navigator.push(
                 context,
                 MaterialPageRoute(

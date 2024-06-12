@@ -4,7 +4,6 @@ import 'package:apb5/helpers/helper.dart';
 import 'package:apb5/screens/home_screen.dart';
 import 'package:apb5/screens/order_screen.dart';
 import 'package:apb5/themes/colors/colors_manager.dart';
-import 'package:apb5/themes/values_manager/strings.dart';
 import 'package:flutter/material.dart';
 
 class MakeOrderScreen extends StatefulWidget {

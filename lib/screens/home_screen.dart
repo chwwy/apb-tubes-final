@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: Center(child: Image.asset(width: 23.0,'${Helper.assetImagePath}icon_heart.png')),
+            icon: Center(child: Image.asset(width: 23.0,'${Helper.assetImagePath}ic_heart.png')),
             label: '',
           ),
           BottomNavigationBarItem(
